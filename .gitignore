@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+
+# Data (large files - use Google Drive instead)
+04_data/raw/*.csv
+04_data/raw/*.zip
+04_data/processed/*.csv
+
+# Models (large files - save to Drive)
+05_models/saved_models/*.pkl
+05_models/saved_models/*.joblib
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+profile_default/
+
+# Credentials (NEVER commit these)
+.kaggle/
+.env
+*.pem
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+
+# Editor metadata
+.puku/
+.qodo/

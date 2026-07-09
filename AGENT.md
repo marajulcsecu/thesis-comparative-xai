@@ -8,8 +8,7 @@
 > - How the user prefers to work
 
 > **Maintainer**: MD. Marajul Haque — **update this file at the end of every session** (5 min max).
-
-> **Last Updated**: July 7, 2026
+> **Last Updated**: July 9, 2026 (Steps 0.1–0.7 complete; Step 0.8 deferred; 0.9 next)
 
 ---
 
@@ -274,35 +273,36 @@ This means:
 
 ### 🎯 Current Phase: **Phase 0 — Foundation & Tooling**
 
-**Status**: Documentation complete; user has not yet executed the steps.
+**Status**: 7 of 14 steps complete; 1 deferred (Zotero, scheduled Jul 23-24); 6 remaining (0.9, 0.10, 0.11, 0.12, 0.13, 0.14).
 
 ### Phase 0 Steps Completed
 *(User will update after running steps)*
 
 | Step | Description | Status |
 |---|---|---|
-| 0.1 | Folder structure | ⬜ |
-| 0.2 | Git + GitHub | ⬜ |
-| 0.3 | Python + venv | ⬜ |
-| 0.4 | Install libraries | ⬜ |
-| 0.5 | Tracking files | ⬜ |
-| 0.6 | Colab + Drive | ⬜ |
-| 0.7 | Kaggle + API | ⬜ |
-| 0.8 | Zotero + BibTeX | ⬜ |
-| 0.9 | Overleaf account | ⬜ |
-| 0.10 | SHAP smoke test | ⬜ |
-| 0.11 | LIME smoke test | ⬜ |
-| 0.12 | Drive backup | ⬜ |
-| 0.13 | README | ⬜ |
-| 0.14 | Final verification | ⬜ |
+| 0.1 | Folder structure | ✅ 2026-07-09 |
+| 0.2 | Git + GitHub (repo `thesis-comparative-xai`) | ✅ 2026-07-09 |
+| 0.3 | Python 3.12.3 + `.venv` (pip 26.1.2) | ✅ 2026-07-09 |
+| 0.4 | 19 libraries installed (numpy 2.4.6, scikit-learn 1.9.0, xgboost 2.1.4, lightgbm 4.6.0, shap 0.52.0, lime 0.2.0.1, …) | ✅ 2026-07-09 |
+| 0.5 | NOTES.md, README.md stub, .gitignore filled | ✅ 2026-07-09 |
+| 0.6 | Colab notebook tested (Python 3.12.13), Drive mounted at `/content/drive/MyDrive/Thesis_Backup/Thesis_V1` | ✅ 2026-07-09 |
+| 0.7 | Kaggle account + scoped token in `~/.kaggle/access_token` (mode 600), `kaggle-2.2.3` CLI, `datasets list` verified | ✅ 2026-07-09 |
+| 0.8 | Zotero + Better BibTeX | ⏸ deferred — install Jul 23-24 (Phase 1→2). Checklist at `02_literature/ZOTERO_SETUP.md` |
+| 0.9 | Overleaf account | ⏳ next |
+| 0.10 | SHAP smoke test | ⏳ pending |
+| 0.11 | LIME smoke test | ⏳ pending |
+| 0.12 | Drive backup | ⏳ pending |
+| 0.13 | README | ⏳ pending |
+| 0.14 | Final verification | ⏳ pending |
 
 ### Last User Message Summary
-> *"okay i will follow this roadmap step by step and don't skip anything. now here (4.PHASE ROADMAP (11 PHASES)) each phase it short and not so detailed... so i want detailed of each phase (each phase in .md file)... so go ahead and create for first PHASE 0: Foundation & Tooling."*
+> User just asked: *"okay now step 0.9. but are you updating agent.md?"* — confirming AGENT.md must be kept in sync with phase progress.
 
-→ User then asked for `AGENT.md` before proceeding.
+→ Working through Phase 0 step-by-step. Steps 0.1–0.7 complete. Step 0.8 (Zotero) deliberately deferred — too GUI-heavy for end-of-Phase-0, plus no real papers to save yet. Full Zotero checklist saved to `02_literature/ZOTERO_SETUP.md` (ready to use on Jul 23-24).
 
 ### Pending User Action
-- Run Phase 0 steps (or subset)
+- Continue Phase 0: steps 0.9 → 0.14 (~15-20 min more)
+- Then begin Phase 1 work (topic + scope already locked in earlier sessions; mostly writing 1-page proposal)
 - Reply "Create Phase 1" when ready
 
 ---
@@ -561,15 +561,20 @@ MODELS: Random Forest, XGBoost, LightGBM, Stacking
 XAI: SHAP + LIME
 JOURNAL TARGET: IEEE Access (Q2 Scopus)
 TIMELINE: 3 months total; full-time work
-CURRENT PHASE: Phase 0 — Foundation & Tooling
+CURRENT PHASE: Phase 0 — 7 of 14 steps complete (0.8 deferred)
 USER STYLE: Wants detailed .md files per phase; will not skip steps;
-            treats thesis as learning vehicle
+            treats thesis as learning vehicle; beginner-friendly tone;
+            follows AI recommendations on scheduling.
 KEY FILES:
   - THESIS_ROADMAP.md (master plan)
   - phase_00_FOUNDATION.md (Phase 0 detailed guide)
   - AGENT.md (this file — context handoff)
-NEXT ACTION: User will run Phase 0 setup steps; reply "Create Phase 1"
-            when ready.
+  - PHASE_CREATION_PLAN.md (meta-plan for phase doc creation)
+  - 02_literature/ZOTERO_SETUP.md (Zotero deferral checklist)
+NEXT ACTION: Complete remaining Phase 0 steps (0.9 Overleaf → 0.10
+            SHAP test → 0.11 LIME test → 0.12 backup → 0.13 README
+            → 0.14 final verify), then reply "Create Phase 1" when
+            user is ready.
 ```
 
 ### User's "What's Next" Pattern
@@ -612,3 +617,80 @@ The user always expects the AI to:
 ---
 
 **🎯 This file is now THE single source of truth for all AI assistants working on this thesis. Keep it updated, and the project will stay on track.**
+
+---
+
+## 14. SESSION HANDOFF NOTES — 2026-07-09
+
+> **Why this section exists:** Today's chat is long (Phase 0 steps 0.3 → 0.9
+> took ~80 messages). Puku IDE is showing slowdowns. The user plans to start a
+> **fresh chat** at some point — when they do, **paste this file** into the new
+> chat and the new AI will have full context without the message history.
+
+### What was done today (2026-07-09)
+
+| Step | Title | Outcome |
+|------|-------|---------|
+| 0.3 | Python + venv | `.venv` at repo root, Python 3.12.3, pip 26.1.2 |
+| 0.4 | Install libraries | 19 libs in venv — `requirements.txt` written; **deviated from plan** by using version RANGES (e.g. `numpy>=2.0,<3.0`) instead of plan's mid-2023 EXACT pins (e.g. `numpy==1.24.3`), because the plan's pins don't support Python 3.12. Library list is identical, only version specifier format changed. |
+| 0.5 | Tracking files | `NOTES.md` filled with 11 sections (4-step Phase 0 tracker + 7 long-term scratchpad); `README.md` given a 1-paragraph stub (full content lands in Step 0.13) |
+| 0.6 | Colab + Drive | Notebook `00_setup_test.ipynb` created in Colab (Python 3.12.13), Drive mounted, `Thesis_Backup/Thesis_V1/` created, test file written+read back. Saved copy at `My Drive / Colab Notebooks / Copy of 00_setup_test.ipynb` |
+| 0.7 | Kaggle + API | Account via Google SSO, scoped token saved to `~/.kaggle/access_token` (mode 600), `kaggle-2.2.3` CLI installed, `datasets list` verified. **Token rotation deliberately skipped** (token visible in chat). |
+| 0.8 | Zotero | **Deferred** to Jul 23-24 (Phase 1→2 transition). Full checklist in `02_literature/ZOTERO_SETUP.md` (250+ lines, copy-pasteable). |
+| 0.9 | Overleaf | In progress (current step) |
+
+### Active issues / gotchas future-AI must know
+
+1. **Kaggle token `KGAT_e974384162dbc0298ed97c9b92b88b0f` is exposed** in
+   Puku chat history. Not rotated. To rotate: user must go to
+   `kaggle.com/settings/api` → click `⋮` on the `thesis-laptop` token → Expire,
+   then Generate New, then user runs in their terminal:
+   ```bash
+   echo 'KGAT_NEW_TOKEN_HERE' > ~/.kaggle/access_token && chmod 600 ~/.kaggle/access_token
+   kaggle datasets list | head -3   # verify new token works
+   ```
+
+2. **Plan deviation on `requirements.txt` versions** — see Step 0.4 note above.
+   Do NOT "fix" by reverting to old pins (e.g. `numpy==1.24.3`) — they will
+   fail to install under Python 3.12. Current ranges (e.g. `numpy>=2.0,<3.0`)
+   are correct and were chosen for Python 3.12 compatibility.
+
+3. **Agent shell freeze incident** — earlier today the agent terminal got stuck
+   after a `nano` invocation in the `~/.kaggle/` directory. Fix was to start a
+   fresh terminal command. **Lesson: do not invoke interactive editors (nano,
+   vim, less) from agent commands** — they hold the shell. Use file-redirect
+   commands or `create_file` tool instead.
+
+4. **Puku IDE slowdowns** — likely due to long chat context. User's plan: end
+   chat, start fresh, paste this file. Future chats should **not** scroll
+   through message history — read `AGENT.md` + `NOTES.md` + `THESIS_ROADMAP.md`
+   + `phase_00_FOUNDATION.md` + `PHASE_CREATION_PLAN.md` directly instead.
+
+### Files in repo as of 2026-07-09
+
+```
+Thesis_V1/
+├── AGENT.md                     ← this file (last edited today)
+├── NOTES.md                     ← private scratchpad (gitignored)
+├── README.md                    ← 1-paragraph stub (full content lands in Step 0.13)
+├── THESIS_ROADMAP.md            ← 11-phase master plan (1040 lines)
+├── phase_00_FOUNDATION.md       ← Phase 0 detailed guide (1065 lines)
+├── PHASE_CREATION_PLAN.md       ← phase-doc creation pipeline
+├── 02_literature/
+│   ├── ZOTERO_SETUP.md          ← Step 0.8 deferred checklist (created today)
+│   └── notes_per_paper/         ← empty
+├── src/
+│   └── requirements.txt         ← 19 pinned libraries (created today)
+├── .gitignore                   ← 48 rules (Python, data, models, secrets, OS, IDE)
+├── .venv/                       ← Python 3.12.3 venv (gitignored)
+└── (other empty numbered folders: 01_proposal, 03_proposal_backup, 04_data,
+   05_models, 06_xai_exploration, 07_xai_output, 08_comparison, 09_thesis,
+   10_paper, notebooks)
+```
+
+### Next concrete action
+
+**Continue Step 0.9 (Overleaf account creation, ~3 min browser work).**
+Then Steps 0.10 (Hello SHAP smoke test), 0.11 (Hello LIME), 0.12 (Drive
+backup), 0.13 (README rewrite), 0.14 (final verification) — all automatable
+except 0.9 (browser sign-up) and the final 0.13 (user review).

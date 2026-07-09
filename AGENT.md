@@ -8,7 +8,7 @@
 > - How the user prefers to work
 
 > **Maintainer**: MD. Marajul Haque — **update this file at the end of every session** (5 min max).
-> **Last Updated**: July 9, 2026 (Steps 0.1–0.7 complete; Step 0.8 deferred; 0.9 next)
+> **Last Updated**: July 9, 2026 (Steps 0.1–0.10 complete; Step 0.8 deferred; 0.11 next)
 
 ---
 
@@ -273,7 +273,7 @@ This means:
 
 ### 🎯 Current Phase: **Phase 0 — Foundation & Tooling**
 
-**Status**: 7 of 14 steps complete; 1 deferred (Zotero, scheduled Jul 23-24); 6 remaining (0.9, 0.10, 0.11, 0.12, 0.13, 0.14).
+**Status**: 8 of 14 steps complete; 1 deferred (Zotero, scheduled Jul 23-24); 5 remaining (0.11, 0.12, 0.13, 0.14).
 
 ### Phase 0 Steps Completed
 *(User will update after running steps)*
@@ -288,8 +288,8 @@ This means:
 | 0.6 | Colab notebook tested (Python 3.12.13), Drive mounted at `/content/drive/MyDrive/Thesis_Backup/Thesis_V1` | ✅ 2026-07-09 |
 | 0.7 | Kaggle account + scoped token in `~/.kaggle/access_token` (mode 600), `kaggle-2.2.3` CLI, `datasets list` verified | ✅ 2026-07-09 |
 | 0.8 | Zotero + Better BibTeX | ⏸ deferred — install Jul 23-24 (Phase 1→2). Checklist at `02_literature/ZOTERO_SETUP.md` |
-| 0.9 | Overleaf account | ⏳ next |
-| 0.10 | SHAP smoke test | ⏳ pending |
+| 0.9 | Overleaf account | ✅ 2026-07-09 |
+| 0.10 | SHAP smoke test | ✅ 2026-07-09 (plot saved to `results/phase_00/shap_summary_plot.png`) |
 | 0.11 | LIME smoke test | ⏳ pending |
 | 0.12 | Drive backup | ⏳ pending |
 | 0.13 | README | ⏳ pending |
@@ -572,7 +572,7 @@ KEY FILES:
   - PHASE_CREATION_PLAN.md (meta-plan for phase doc creation)
   - 02_literature/ZOTERO_SETUP.md (Zotero deferral checklist)
 NEXT ACTION: Complete remaining Phase 0 steps (0.9 Overleaf → 0.10
-            SHAP test → 0.11 LIME test → 0.12 backup → 0.13 README
+| 0.10 SHAP test ✅ → 0.11 LIME test → 0.12 backup → 0.13 README
             → 0.14 final verify), then reply "Create Phase 1" when
             user is ready.
 ```

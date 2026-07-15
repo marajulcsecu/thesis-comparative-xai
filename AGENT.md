@@ -491,6 +491,7 @@ Be honest. I'm learning and need real feedback.
 | 2026-07-07 | `AGENT.md` created | No context file | User requested it for cross-agent continuity |
 | 2026-07-15 | Backup account: `marajul.cu@gmail.com` Drive (not personal `aar.abdur.rahman.acc1@gmail.com`) | Personal Gmail rclone already existed | Thesis is user's own academic work — must live under their own account; also matches Colab account for unified ecosystem |
 | 2026-07-15 | Backup tool: `rclone sync` (NOT bisync/one-way-folder-mirror) | rclone bisync / `mount` folder pattern used previously | `sync` is one-directional local→Drive; no risk of local changes overwriting newer Drive edits; predictable, professional standard |
+| 2026-07-15 | rclone exclude list must ADD `.puku/` (Puku IDE cache) on top of `.gitignore` rules | Use `.gitignore` patterns directly | rclone doesn't read `.gitignore`; `.puku/` is IDE-internal and ~1 MB+ of junk — must be excluded manually |
 
 ### Future Decisions (To Be Logged)
 - Phase 1 → Specific Research Questions wording

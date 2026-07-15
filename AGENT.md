@@ -8,7 +8,7 @@
 > - How the user prefers to work
 
 > **Maintainer**: MD. Marajul Haque — **update this file at the end of every session** (5 min max).
-> **Last Updated**: July 15, 2026 (Steps 0.1–0.12 complete; Step 0.8 deferred; 0.13 next — notable gap from 0.11 due to user availability)
+> **Last Updated**: July 15, 2026 (Steps 0.1–0.13 complete; Step 0.8 deferred; 0.14 next — final Phase 0 verification)
 
 ---
 
@@ -273,7 +273,7 @@ This means:
 
 ### 🎯 Current Phase: **Phase 0 — Foundation & Tooling**
 
-**Status**: 10 of 14 steps complete; 1 deferred (Zotero, scheduled Jul 23-24); 3 remaining (0.13, 0.14).
+**Status**: 11 of 14 steps complete; 1 deferred (Zotero, scheduled Jul 23-24); 2 remaining (0.14).
 
 ### Phase 0 Steps Completed
 *(User will update after running steps)*
@@ -292,7 +292,7 @@ This means:
 | 0.10 | SHAP smoke test | ✅ 2026-07-09 (plot saved to `results/phase_00/shap_summary_plot.png`) |
 | 0.11 | LIME smoke test | ✅ 2026-07-09 (HTML saved to `results/phase_00/lime_explanation_instance0.html`) |
 | 0.12 | Drive backup | ✅ 2026-07-15 (2nd rclone remote `gdrive-thesis` for marajul.cu@gmail.com; 2.428 MiB uploaded via `rclone sync`) |
-| 0.13 | README | ⏳ pending |
+| 0.13 | README | ✅ 2026-07-15 (rewritten — TL;DR abstract, team, tech stack, datasets, roadmap, repo tree, reproduction steps, privacy note) |
 | 0.14 | Final verification | ⏳ pending |
 
 ### Last User Message Summary

@@ -119,8 +119,8 @@ source .venv/bin/activate
 pip install -r src/requirements.txt
 
 # 4. Sanity-check the XAI tools (Phase 0 smoke tests)
-python notebooks/00_shap_smoke_test.py
-python notebooks/00_lime_smoke_test.py
+python src/tests/test_shap_hello.py
+python src/tests/test_lime_hello.py
 ```
 
 Outputs land in `results/phase_00/`.

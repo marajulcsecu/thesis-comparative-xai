@@ -176,3 +176,17 @@ _(keep brief — long discussions live in `01_proposal/meeting_notes/`)_
 
 ---
 
+
+## Step 0.10 - Hello SHAP smoke test
+- Status: ✅ **complete** (2026-07-09)
+- Script: `src/tests/test_shap_hello.py` (106 lines)
+- Output plot: `results/phase_00/shap_hello_beeswarm.png` (49,538 bytes)
+- Test design: 80-row toy dataset, target correlated with feat_A + 0.5*feat_B,
+  RandomForest (50 trees), TreeExplainer.
+- Sanity check passed:
+  - Train accuracy: 1.000 (toy data is fully separable)
+  - Top feature by mean |SHAP|: feat_A (0.3027), feat_B second (0.1553),
+    noise features C/D near 0 (0.033, 0.015) — ranking matches what we built
+    into the data → SHAP attribution is correct.
+- Confirms end-to-end SHAP works: install + TreeExplainer + summary_plot +
+  file save all green. Real-dataset work in Phase 2 can rely on this stack.

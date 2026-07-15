@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_div2OHUSWKKX9XCVBX"></div>
+        <div class="lime top_div" id="top_divC3CF8KYUBMILWOW"></div>
         
         <script>
-        var top_div = d3.select('#top_div2OHUSWKKX9XCVBX').classed('lime top_div', true);
+        var top_div = d3.select('#top_divC3CF8KYUBMILWOW').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["malignant", "benign"], [0.98, 0.02]);
+            var pp = new lime.PredictProba(pp_svg, ["class_0", "class_1"], [0.94, 0.06]);
             
         
         var exp_div;
-            var exp = new lime.Explanation(["malignant", "benign"]);
+            var exp = new lime.Explanation(["class_0", "class_1"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["worst concave points > 0.16", -0.11141357819757358], ["worst area > 1084.00", -0.1090936169587407], ["worst radius > 18.79", -0.10495511181453822], ["worst perimeter > 125.40", -0.10408611929187092], ["mean concave points > 0.07", -0.08394230920020139]], 1, exp_div);
+                exp.show([["feat_B <= -0.82", -0.3149163767418484], ["0.06 < feat_A <= 0.50", 0.2792682458828223], ["0.03 < feat_C <= 0.77", -0.08819895252398847], ["feat_D > 0.45", -0.039647487806187286]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["worst concave points", "0.27", -0.11141357819757358], ["worst area", "2019.00", -0.1090936169587407], ["worst radius", "25.38", -0.10495511181453822], ["worst perimeter", "184.60", -0.10408611929187092], ["mean concave points", "0.15", -0.08394230920020139]], 1, raw_div);
+            exp.show_raw_tabular([["feat_B", "-1.04", -0.3149163767418484], ["feat_A", "0.30", 0.2792682458828223], ["feat_C", "0.75", -0.08819895252398847], ["feat_D", "0.94", -0.039647487806187286]], 1, raw_div);
         
         </script>
         </body></html>

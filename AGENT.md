@@ -8,7 +8,7 @@
 > - How the user prefers to work
 
 > **Maintainer**: MD. Marajul Haque — **update this file at the end of every session** (5 min max).
-> **Last Updated**: July 15, 2026 (Steps 0.1–0.13 complete; Step 0.8 deferred; 0.14 next — final Phase 0 verification)
+> **Last Updated**: July 15, 2026 (**PHASE 0 COMPLETE** — all 14 steps done; Zotero deferred to Jul 23-24; ready for Phase 1)
 
 ---
 
@@ -273,7 +273,7 @@ This means:
 
 ### 🎯 Current Phase: **Phase 0 — Foundation & Tooling**
 
-**Status**: 11 of 14 steps complete; 1 deferred (Zotero, scheduled Jul 23-24); 2 remaining (0.14).
+**Status**: Phase 0 ✅ COMPLETE (all 14 steps; Zotero deferred to Jul 23-24). Phase 1 next.
 
 ### Phase 0 Steps Completed
 *(User will update after running steps)*
@@ -293,7 +293,7 @@ This means:
 | 0.11 | LIME smoke test | ✅ 2026-07-09 (HTML saved to `results/phase_00/lime_explanation_instance0.html`) |
 | 0.12 | Drive backup | ✅ 2026-07-15 (2nd rclone remote `gdrive-thesis` for marajul.cu@gmail.com; 2.428 MiB uploaded via `rclone sync`) |
 | 0.13 | README | ✅ 2026-07-15 (rewritten — TL;DR abstract, team, tech stack, datasets, roadmap, repo tree, reproduction steps, privacy note) |
-| 0.14 | Final verification | ⏳ pending |
+| 0.14 | Final verification | ✅ 2026-07-15 (14/14 exit criteria met; smoke tests consolidated into `src/tests/`; LIME `__version__` fixed via `importlib.metadata`) |
 
 ### Last User Message Summary
 > User just asked: *"okay now step 0.9. but are you updating agent.md?"* — confirming AGENT.md must be kept in sync with phase progress.
@@ -301,9 +301,9 @@ This means:
 → Working through Phase 0 step-by-step. Steps 0.1–0.7 complete. Step 0.8 (Zotero) deliberately deferred — too GUI-heavy for end-of-Phase-0, plus no real papers to save yet. Full Zotero checklist saved to `02_literature/ZOTERO_SETUP.md` (ready to use on Jul 23-24).
 
 ### Pending User Action
-- Continue Phase 0: steps 0.9 → 0.14 (~15-20 min more)
-- Then begin Phase 1 work (topic + scope already locked in earlier sessions; mostly writing 1-page proposal)
-- Reply "Create Phase 1" when ready
+|- **Phase 0 ✅ DONE** (verified 2026-07-15 11:53 BST).
+|- Next: begin Phase 1 work — topic + scope already locked in earlier sessions; mostly writing the 1-page proposal.
+|- Reply "Create Phase 1" when ready.
 
 ---
 
@@ -492,6 +492,9 @@ Be honest. I'm learning and need real feedback.
 | 2026-07-15 | Backup account: `marajul.cu@gmail.com` Drive (not personal `aar.abdur.rahman.acc1@gmail.com`) | Personal Gmail rclone already existed | Thesis is user's own academic work — must live under their own account; also matches Colab account for unified ecosystem |
 | 2026-07-15 | Backup tool: `rclone sync` (NOT bisync/one-way-folder-mirror) | rclone bisync / `mount` folder pattern used previously | `sync` is one-directional local→Drive; no risk of local changes overwriting newer Drive edits; predictable, professional standard |
 | 2026-07-15 | rclone exclude list must ADD `.puku/` (Puku IDE cache) on top of `.gitignore` rules | Use `.gitignore` patterns directly | rclone doesn't read `.gitignore`; `.puku/` is IDE-internal and ~1 MB+ of junk — must be excluded manually |
+| 2026-07-15 | LIME smoke test version check: use `importlib.metadata.version('lime')` (not `lime.__version__`) | Direct `__version__` attr | LIME 0.2.0.1 lacks `__version__` attribute; `importlib.metadata` works for all installed packages |
+| 2026-07-15 | Smoke-test canonical home: `src/tests/` (not `notebooks/`) | `notebooks/` from the plan | Tests are test code, not exploration; `src/tests/` separates test infrastructure from free-form notebook work and aligns with `pytest` layout we'll use in Phase 6+ |
+| 2026-07-15 | Phase 0 status: **COMPLETE** ✅ | — | All 14 exit criteria met; verified at 2026-07-15 11:53 BST |
 
 ### Future Decisions (To Be Logged)
 - Phase 1 → Specific Research Questions wording
@@ -564,7 +567,7 @@ MODELS: Random Forest, XGBoost, LightGBM, Stacking
 XAI: SHAP + LIME
 JOURNAL TARGET: IEEE Access (Q2 Scopus)
 TIMELINE: 3 months total; full-time work
-CURRENT PHASE: Phase 0 — 7 of 14 steps complete (0.8 deferred)
+CURRENT PHASE: Phase 0 ✅ COMPLETE (all 14 steps done; Zotero deferred to Jul 23-24)
 USER STYLE: Wants detailed .md files per phase; will not skip steps;
             treats thesis as learning vehicle; beginner-friendly tone;
             follows AI recommendations on scheduling.

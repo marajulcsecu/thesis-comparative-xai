@@ -32,7 +32,7 @@ The 11 phases from `THESIS_ROADMAP.md` §4 will be converted into **detailed `.m
 | # | Phase Doc Filename | Phase Name | User's Reason to Create | Status |
 |---|---|---|---|---|
 | 0 | `phase_00_FOUNDATION.md` | Foundation & Tooling | First phase; setup is the foundation | ✅ Created (July 7) |
-| 1 | `phase_01_SCOPE_LOCK.md` | Topic Finalization & Scope Lock | Required before any work; locks RQs | ⏳ Pending |
+| 1 | `phase_01_SCOPE_LOCK.md` | Topic Finalization & Scope Lock | Required before any work; locks RQs | ✅ Created (July 9) |
 | 2 | `phase_02_LITERATURE_REVIEW.md` | Literature Review | Largest research phase; needs detail | ⏳ Pending |
 | 3 | `phase_03_PROPOSAL.md` | Proposal Writing & Defense | First major writing milestone | ⏳ Pending |
 | 4 | `phase_04_EDA.md` | Data Acquisition & EDA | Before any modeling work | ⏳ Pending |

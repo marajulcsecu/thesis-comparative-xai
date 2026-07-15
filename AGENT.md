@@ -8,7 +8,7 @@
 > - How the user prefers to work
 
 > **Maintainer**: MD. Marajul Haque — **update this file at the end of every session** (5 min max).
-> **Last Updated**: July 15, 2026 (**PHASE 0 COMPLETE** — all 14 steps done; Zotero deferred to Jul 23-24; ready for Phase 1)
+> **Last Updated**: July 15, 2026 (**PHASE 0 COMPLETE**; **PHASE 1 DOC CREATED** — `phase_01_SCOPE_LOCK.md` ready to execute; next: user runs Steps 1.1-1.11)
 
 ---
 
@@ -235,7 +235,7 @@ This means:
 | File | Status | Created |
 |---|---|---|
 | `phase_00_FOUNDATION.md` | ✅ Done | July 7, 2026 |
-| `phase_01_SCOPE_LOCK.md` | ⏳ Pending | (awaiting user "Create Phase 1") |
+| `phase_01_SCOPE_LOCK.md` | 765 | ✅ Complete | Detailed Phase 1 scope-lock steps (1.1-1.11) |
 | `phase_02_LITERATURE_REVIEW.md` | ⏳ Pending | (awaiting user) |
 | `phase_03_PROPOSAL.md` | ⏳ Pending | (awaiting user) |
 | `phase_04_EDA.md` | ⏳ Pending | (awaiting user) |
@@ -271,9 +271,9 @@ This means:
 
 ## 8. CURRENT PROGRESS
 
-### 🎯 Current Phase: **Phase 0 — Foundation & Tooling**
+### 🎯 Current Phase: **Phase 1 — Topic & Scope Lock**
 
-**Status**: Phase 0 ✅ COMPLETE (all 14 steps; Zotero deferred to Jul 23-24). Phase 1 next.
+**Status**: Phase 0 ✅ COMPLETE (all 14 steps; Zotero deferred to Jul 23-24). Phase 1 doc CREATED (`phase_01_SCOPE_LOCK.md`); user to execute Steps 1.1-1.11 next.
 
 ### Phase 0 Steps Completed
 *(User will update after running steps)*
@@ -495,6 +495,10 @@ Be honest. I'm learning and need real feedback.
 | 2026-07-15 | LIME smoke test version check: use `importlib.metadata.version('lime')` (not `lime.__version__`) | Direct `__version__` attr | LIME 0.2.0.1 lacks `__version__` attribute; `importlib.metadata` works for all installed packages |
 | 2026-07-15 | Smoke-test canonical home: `src/tests/` (not `notebooks/`) | `notebooks/` from the plan | Tests are test code, not exploration; `src/tests/` separates test infrastructure from free-form notebook work and aligns with `pytest` layout we'll use in Phase 6+ |
 | 2026-07-15 | Phase 0 status: **COMPLETE** ✅ | — | All 14 exit criteria met; verified at 2026-07-15 11:53 BST |
+| 2026-07-15 | `phase_01_SCOPE_LOCK.md` created (765 lines, 11 steps) | — | Triggered by user "we will continue this chat. you can create phase 1"; follows Phase 0 format (step index, 🎯🤖👤✅🚨 sections, troubleshooting tables); covers 5 RQs, 5 hypotheses, 3 datasets, 6 models, 8 metrics, advisor-meeting prep |
+| 2026-07-15 | Phase 1 doc scope decision: keep 6 models (NOT 5, NOT 7) — LR, DT, RF, XGB, LGBM, Stacking(LR-meta) | Reduce to 5; add CatBoost | Matches roadmap Phase 1 §4 line 166 (LogReg + DT + RF + XGB + LGBM + Stacking); 6 is right balance for BSc scope; LR as meta-learner is most-cited in stacking literature |
+| 2026-07-15 | Phase 1 doc scope decision: 8 metrics (4 perf + 5 interp − 1 dropped = 8) | Keep all 10 | Drop Precision OR Kendall τ (both redundant); documented in Step 1.7 of phase doc |
+| 2026-07-15 | Phase 1 doc scope decision: 5 RQs each SMART-compliant with method × model × dataset × metric named | Vague RQs ("how do they compare?") | Each RQ must pass all 5 SMART letters; example rewrite shown in Step 1.3 of phase doc |
 
 ### Future Decisions (To Be Logged)
 - Phase 1 → Specific Research Questions wording

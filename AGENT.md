@@ -8,7 +8,7 @@
 > - How the user prefers to work
 
 > **Maintainer**: MD. Marajul Haque — **update this file at the end of every session** (5 min max).
-> **Last Updated**: July 9, 2026 (Steps 0.1–0.11 complete; Step 0.8 deferred; 0.12 next)
+> **Last Updated**: July 15, 2026 (Steps 0.1–0.12 complete; Step 0.8 deferred; 0.13 next — notable gap from 0.11 due to user availability)
 
 ---
 
@@ -273,7 +273,7 @@ This means:
 
 ### 🎯 Current Phase: **Phase 0 — Foundation & Tooling**
 
-**Status**: 9 of 14 steps complete; 1 deferred (Zotero, scheduled Jul 23-24); 4 remaining (0.12, 0.13, 0.14).
+**Status**: 10 of 14 steps complete; 1 deferred (Zotero, scheduled Jul 23-24); 3 remaining (0.13, 0.14).
 
 ### Phase 0 Steps Completed
 *(User will update after running steps)*
@@ -291,7 +291,7 @@ This means:
 | 0.9 | Overleaf account | ✅ 2026-07-09 |
 | 0.10 | SHAP smoke test | ✅ 2026-07-09 (plot saved to `results/phase_00/shap_summary_plot.png`) |
 | 0.11 | LIME smoke test | ✅ 2026-07-09 (HTML saved to `results/phase_00/lime_explanation_instance0.html`) |
-| 0.12 | Drive backup | ⏳ pending |
+| 0.12 | Drive backup | ✅ 2026-07-15 (2nd rclone remote `gdrive-thesis` for marajul.cu@gmail.com; 2.428 MiB uploaded via `rclone sync`) |
 | 0.13 | README | ⏳ pending |
 | 0.14 | Final verification | ⏳ pending |
 
@@ -489,6 +489,8 @@ Be honest. I'm learning and need real feedback.
 | 2026-07-06 | Roadmap split into 11 phases | Compressed timeline, task-based only | Phase-based = clearer deliverables + logical dependencies |
 | 2026-07-07 | Each phase gets detailed `.md` file | Combined phase document | User explicitly requested granular per-phase files |
 | 2026-07-07 | `AGENT.md` created | No context file | User requested it for cross-agent continuity |
+| 2026-07-15 | Backup account: `marajul.cu@gmail.com` Drive (not personal `aar.abdur.rahman.acc1@gmail.com`) | Personal Gmail rclone already existed | Thesis is user's own academic work — must live under their own account; also matches Colab account for unified ecosystem |
+| 2026-07-15 | Backup tool: `rclone sync` (NOT bisync/one-way-folder-mirror) | rclone bisync / `mount` folder pattern used previously | `sync` is one-directional local→Drive; no risk of local changes overwriting newer Drive edits; predictable, professional standard |
 
 ### Future Decisions (To Be Logged)
 - Phase 1 → Specific Research Questions wording
